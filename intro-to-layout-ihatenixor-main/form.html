@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Аренда специализированных насосных станций</title>
+</head>
+
+<body>
+    <header class="">
+        <section class="header">
+            <div class="header__wrapper">
+                <div class="header-wrapper__block">
+                    <img src="/img/logoo.svg" alt="Лого компании Сахара" class="header-wrapper__img">
+                    <button class="header-wrapper__button"></button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="form">
+            <div class="form__wrapper">
+                <form action="//httpbin.org/post" class="forma" method="post">
+                    <h2 class="form-title">Регистрация пользователя</h2>
+                    <fieldset class="fieldset">
+                        <label class="form-label">
+                            <span class="form-span">Имя:</span>
+                            <input type="text" class="form-input" name="name" placeholder="Введите ваше имя" required>
+                        </label>
+                        <label class="form-label">
+                            <span class="form-span">Дата рождения:</span>
+                            <input type="date" class="form-input" name="dob" required>
+                        </label>
+                        <label class="form-label">
+                            <span class="form-span">Пол:</span>
+                        </label>
+                        <label class="form-label">
+                            <input type="radio" class="input-radio" name="gender" value="male" Male>
+                            <span class="form-span">Мужской</span>
+                        </label>
+                        <label class="form-label">
+                            <input type="radio" class="input-radio" name="gender" value="female" Female>
+                            <span class="form-span">Женский</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label class="form-label">
+                            <span class="form-span">Почта:</span>
+                            <input type="email" class="form-input" name="email" placeholder="Введите ваш email"
+                                required>
+                        </label>
+                        <label class="form-label">
+                            <span class="form-span">Пароль:</span>
+                            <input type="password" class="form-input" name="password" placeholder="Введите ваш пароль"
+                                required>
+                        </label>
+                        <label class="form-label">
+                            <span class="form-span">Удобный интервал для связи:</span>
+                            <select class="form-select" name="contact-time">
+                                <option value="morning">8:00 - 18:00</option>
+                                <option value="evening">18:00 - 23:00</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <div class="form-button">
+                        <button type="submit" class="form-input">Отправить</button>
+                        <input type="reset" class="form-input" value="Сбросить">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div>
+            <form action="post" class="form main-worksheet main-worksheet">
+                <dl>
+                    <dt>Псевдоэлемент</dt>
+                    <dd> Элементы, которых не существует в HTML-разметке. Они создаются и позиционируются исключительно
+                        при помощи CSS. Чаще всего используются для создания различных декоративных элементов (которые
+                        не несут содержательного смысла).Также псевдоэлементы приходят на помощь, когда нужно наложить
+                        поверх картинки так называемый оверлей (перекрывающий слой). На этом польза от псевдоэлементов
+                        не заканчивается</dd>
+                    <dt>Псевдокласс</dt>
+                    <dd>Особый вид селектора, который уточняет тип или состояние. Обычно это какой-то качественный
+                        признак: реакция на наведение курсора, порядок следования и другие.</dd>
+                </dl>
+                <fieldset class="main-worksheet__fieldset">
+                    <legend>Псевдоэлементы</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::before" value="::before" checked>
+                            <label for="::before">::before</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::after" value="::after" checked>
+                            <label for="::after">::after</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::first-letter" value="::first-letter" checked>
+                            <label for="::first-letter">::first-letter</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::selection" value="::selection">
+                            <label for="::selection" aria-checked="true">::selection</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::first-line" value="::first-line">
+                            <label for="::first-line">::first-line</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::placeholder" value="::placeholder" checked>
+                            <label for="::placeholder">::placeholder</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id="::marker" value="::marker">
+                            <label for="::marker">::marker</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="main-worksheet__fieldset">
+                    <legend>Псевдоклассы</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":active" value=":active" checked>
+                            <label for=":active">:active</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":hover" value=":hover" checked>
+                            <label for=":hover">:hover</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":focus" value=":focus" checked>
+                            <label for=":focus">:focus</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":checked" value=":checked" checked>
+                            <label for=":checked" aria-checked="true">:checked</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":not" value=":not">
+                            <label for=":not">:not</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":root" value=":root" checked>
+                            <label for=":root">:root</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="psclass" id=":empty" value=":empty">
+                            <label for=":empty">:empty</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer">
+            <p class="footer_txt">2015 — 2023 г.</p>
+            <img class="footer_pic" src="/img/logofooter.svg" alt="лого компании">
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
